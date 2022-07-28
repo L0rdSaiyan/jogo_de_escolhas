@@ -1,0 +1,59 @@
+body{
+
+    background-color: aqua;
+
+}
+
+#background{
+
+    color: white;
+    background-color: rgb(42, 38, 38);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+#option1{
+
+  display: flex;
+  justify-content: center;  
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 160px;
+
+}
+
+#or{
+
+display: flex;
+justify-content: center;    
+width: 80px;
+height: 80px;
+position: absolute;
+margin-top: 150px;
+margin-left: 335px;
+
+}
+
+#option2{
+
+    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 470px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+
+
+}
