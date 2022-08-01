@@ -1,7 +1,6 @@
 let resposta = document.getElementById("option1");
 let resposta2 = document.getElementById("option2");
 
-
 let clicks = 0
 
 resposta.onclick = function(){
@@ -10,7 +9,7 @@ resposta.onclick = function(){
 
 if(clicks==1){
 
-    alert("clicou no "+resposta.innerText)
+    alert(`Clicou no ${resposta.innerText}`)
     resposta.innerText = 'frio'
     resposta2.innerText = 'calor'
     console.log(clicks)
@@ -36,7 +35,7 @@ else if(clicks==3){
 
 resposta2.onclick = function(){
 
-    alert("clicou no "+resposta2.innerText);
+    alert(`clicou no ${resposta2.innerText}`);
     resposta.innerHTML = 'frio'
     resposta2.innerHTML = 'calor'
 
