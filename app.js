@@ -1,7 +1,5 @@
 let resposta = document.getElementById("option1");
 let resposta2 = document.getElementById("option2");
-let content2 = document.createTextNode("frio")
-let content3 = document.createTextNode("calor")
 
 let clicks = 0
 
