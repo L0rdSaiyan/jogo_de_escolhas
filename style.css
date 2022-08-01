@@ -21,12 +21,15 @@ body{
 
   display: flex;
   justify-content: center;  
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 100px;
   height: 100px;
   background-color: red;
   position: absolute;
   margin-top: 150px;
   margin-left: 160px;
+  text-align: center;
 
 }
 
@@ -47,12 +50,15 @@ margin-left: 335px;
     
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     margin-top: 150px;
     margin-left: 470px;
     width: 100px;
     height: 100px;
     background-color: blue;
+    text-align: center;
 
 
 
