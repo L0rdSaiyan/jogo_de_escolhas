@@ -1,59 +1,59 @@
-body{
-
-    background-color: aqua;
-
-}
-
-#background{
-
-    color: white;
-    background-color: rgb(42, 38, 38);
-    width: 500px;
-    height: 300px;
+body {
+    min-height: 100vh; 
+    /* altura minima do body vai ser 100% da altura do monitor, assim se precisar ficar maior vai ficar */
     display: flex;
     justify-content: center;
-    position: absolute;
-    margin-left: 120px;
-    margin-top: 50px;
+    align-items: center;
+    /* centralizar horizontalmente e verticalmente os elementos que estão dentro do body */
 }
 
-#option1{
-
-  display: flex;
-  justify-content: center;  
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: absolute;
-  margin-top: 150px;
-  margin-left: 160px;
-
-}
-
-#or{
-
-display: flex;
-justify-content: center;    
-width: 80px;
-height: 80px;
-position: absolute;
-margin-top: 150px;
-margin-left: 335px;
-
-}
-
-#option2{
-
+main {
+    width: 100%;
+    max-width: 40rem;
+    /*
     
+    * rem é uma medida que depende do tamanho do monitor, assim fica mais adaptavel pra praticamente todos os dispositivos 
+    
+    * max-width: https://developer.mozilla.org/pt-BR/docs/Web/CSS/max-width
+    aqui usei um truque pro tramanho do main se adaptar pra todas as telas, assim em uma tela grande ele vai ficar com o tamanho de 40 rem e em telas menores vai se adaptar sozinho 
+    */
+    min-height: 20rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.opcoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem 1rem 0 1rem;
+}
+
+/* isso aqui é tipo um if do css, traduzindo fica mais ou menos assim:
+se a tela ultrapassar 670px faça isso: */
+@media (max-width: 670px) {
+    .opcoes {
+        margin: 4rem 0 0 0;
+    }
+}
+/* https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+
+.opcao {
+    border-radius: 3px;
+    width: 100%;
+    max-width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    transition: .2s;
     display: flex;
     justify-content: center;
-    position: absolute;
-    margin-top: 150px;
-    margin-left: 470px;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+    align-items: center;
+    padding: .2rem;
+    user-select: none;
+    border: 1px solid black;
+}
 
-
-
+.opcao:hover {
+    transform: scale(1.1);
 }
